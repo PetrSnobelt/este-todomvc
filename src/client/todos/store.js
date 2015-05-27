@@ -81,6 +81,10 @@ export const dispatchToken = register(({action, data}) => {
       })
       break
 
+    default:
+      console.log('missing handler in store for action', action);
+      break;
+
   }
 
 })
